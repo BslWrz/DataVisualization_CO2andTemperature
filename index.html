@@ -1,0 +1,81 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous"
+  />
+  <head>
+    <meta charset="UTF-8" />
+    <title>数据可视化 第五组</title>
+  </head>
+  <body>
+    <div th:fragment="nav">
+      <nav class="navbar navbar-default">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="./index.html">数据可视化 第五组</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav"></ul>
+          <ul class="nav navbar-nav navbar-right"></ul>
+        </div>
+      </nav>
+      <div
+        class="nav navbar-nav"
+        style="
+          background-color: #f8f8f8;
+          border-style: solid;
+          border-color: #e7e7e7;
+          margin-left: 5px;
+          border-radius: 5px;
+        "
+      >
+        <sapn>
+          <li>
+            <a href="./CO2/CO2.html" style="color: #777777; padding: 15px 15px;"
+              >二氧化碳可视化</a
+            >
+          </li></sapn
+        >
+        <br />
+        <span>
+          <li>
+            <a href="./tem/tem.html" style="color: #777777; padding: 15px 15px;"
+              >温度变化可视化</a
+            >
+          </li></span
+        >
+        <br />
+        <span
+          ><li>
+            <a
+              href="./finna/finna.html"
+              style="color: #777777; padding: 15px 15px;"
+              >总结与思考</a
+            >
+          </li></span
+        >
+      </div>
+    </div>
+    <div
+      style="
+        position: absolute;
+        top: 100px;
+        margin-left: 200px;
+        margin-right: 40px;
+        background-color: #fbfbfd;
+      "
+    >
+      <h1 style="text-align: center; font-family: 宋体;">实验背景</h1>
+      <p style="text-indent: 30px; font-size: 15px; font-family: 楷体;">
+        全球变暖是指地球长期平均气温上升，二氧化碳、甲烷和一氧化二氮等气体的扩散引发了实质性的转变。自1990年以来，温室气体排放量的增加导致全球气温急剧上升。与100年前相比，地球的平均气温上升了1摄氏度。一些气候科学家预测在未来的200年内，全球平均气温可能会上升高达至近6摄氏度。不仅如此，过去20年里，有近70%的极端天气是因为气候变化而造成的。
+      </p>
+      <p style="text-indent: 30px; font-size: 15px; font-family: 楷体;">
+        正如联合国前秘书长潘基文所说：“我们是结束贫困的第一代人，也是能够采取措施避免气候变化最坏影响的最后一代人。如果我们没有履行自己的道德和历史责任，后代将严厉地批判我们。”因此，寻找应对全球变暖的方法成为了一个世界性的议题。然而，对全球变暖情况进行分析会遇到以下两个问题：一是传统统计方法不足以对有大量数据的系统进行建模；二是即使有好的模型，通过传统的生产方法计算它们需要花费大量的成本。根据多年的研究，数据分析方法在这两种情况下是更经济、更精确的选择，于是实时数据分析成为了这一领域的大势所趋，预测性分析在预测全球变暖趋势这方面有很大前景。
+      </p>
+      <p style="text-indent: 30px; font-size: 15px; font-family: 楷体;">
+        基于数据分析的研究方法推动了气候信息学领域的研究，气候信息学将气候科学与数据分析结合起来，该领域自2011年发展至今。这门学科涵盖了很多主题，包括加强对极端天气的预测，如洪水、古气候学——通过使用从事物（如气候降尺度、冰芯等）中提取的数据来再现历史气候条件，利用大规模模型在超本地水平上进行预测，并研究气候和天气对社会经济的影响。使用数据分析方法可以分析出隐藏的、有价值的观点，这些观点来源于气候模型创造的大量问题气候和对全球变暖的模拟。毫无疑问，数据分析正在重新定义气候变化政策，它已经成为一些计划和程序的核心组成部分。数据分析的潜力至关重要，包括分析大量复杂的气候数据、识别隐藏关联和演示实时见解。
+      </p>
+    </div>
+  </body>
+</html>

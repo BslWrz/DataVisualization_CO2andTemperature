@@ -1,0 +1,50 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous"
+  />
+  <head>
+    <meta charset="UTF-8" />
+    <title>温度变化可视化</title>
+  </head>
+  <body>
+    <div th:fragment="nav">
+      <nav class="navbar navbar-default">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="./tem.html">温度变化可视化</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="./map/map.html">各国分年份温度变化</a></li>
+            <li><a href="./line/line.html">全球温度变化</a></li>
+            <li><a href="./river/river.html">部分国家温度变化</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="../index.html">返回主页面</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div
+      style="
+        position: absolute;
+        top: 100px;
+        margin-left: 40px;
+        margin-right: 40px;
+        background-color: #fbfbfd;
+      "
+    >
+      <p style="text-indent: 30px; font-size: 15px; font-family: 楷体;">
+        我们选取了1985年、2005年、2015年这三年作为典型年份，收集了这三年全球各国的二氧化碳排放量的情况，图片为年全球各国而二氧化碳排放量。
+      </p>
+      <p style="text-indent: 30px; font-size: 15px; font-family: 楷体;">
+        我们将2000年后数据较全的国家列出来做成可变折线图，分别显示2000年-2019年这20年间全球各国二氧化碳排放量情况。不仅可以显示各国二氧化碳排放量数值，还可清晰查看变化量。
+      </p>
+      <p style="text-indent: 30px; font-size: 15px; font-family: 楷体;">
+        我们选取了中国、英国、美国、澳大利亚、加拿大、巴西这六个国家作为典型代表，制作主题河流图来查看这六个国家的二氧化碳排放量情况。以不同颜色代表不同国家，河流宽度代表二氧化碳排放量。
+      </p>
+    </div>
+  </body>
+</html>
